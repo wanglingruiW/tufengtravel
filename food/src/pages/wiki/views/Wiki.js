@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 
 import '../style.scss'
 
-// import CSSModule from 'react-css-modules'
+
 
 import { getCategories, getHot } from '../actionCreator'
 
@@ -52,7 +52,7 @@ class Wiki extends React.Component {
         >
           {this.props.categories.map(val => (
             <a
-              key={val}
+              key={val.id}
               // href="http://www.alipay.com"
               style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
             >
@@ -80,9 +80,9 @@ class Wiki extends React.Component {
         >
           <div style = {{ flex:'25%', width:"97.5px", height:"100%"}}>
             <img 
+             alt= ""
               src = {`http://img2.toursforfun.com/f2/77/82/途风精品.png`}
-              alt=""
-              style = {{width:'72px', height:'72px', verticalAlign:'top',verticalAlign:'center', textAlign:'center'}}
+              style = {{width:'72px', height:'72px', verticalAlign:'center', textAlign:'center'}}
               />
               <div>
               途风精品
@@ -161,6 +161,7 @@ class Wiki extends React.Component {
           <div 
           style = {{height:'110px', display:'flex', flexWrap:'nowrap', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
             <img 
+            alt = ""
             src={"//cdn.tff.bz/f2/81/fe/750156.jpg"}
             style = {{ width:'90%', height:'87px', textAlign:'center', display:'inlineblock'}}
             />
@@ -238,7 +239,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[0]?
                 this.props.gethot[0].products_info[1].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -322,7 +323,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[0]?
                 this.props.gethot[0].products_info[1].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -404,7 +405,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[0]?
                 this.props.gethot[0].products_info[2].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -486,7 +487,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[0]?
                 this.props.gethot[0].products_info[3].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -583,7 +584,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[1]?
                 this.props.gethot[1].products_info[0].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -667,7 +668,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[1]?
                 this.props.gethot[1].products_info[1].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -749,7 +750,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[1]?
                 this.props.gethot[1].products_info[2].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -831,7 +832,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[1]?
                 this.props.gethot[1].products_info[3].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -928,7 +929,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[2]?
                 this.props.gethot[2].products_info[0].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -1012,7 +1013,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[2]?
                 this.props.gethot[2].products_info[1].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -1094,7 +1095,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[2]?
                 this.props.gethot[2].products_info[2].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >
@@ -1176,7 +1177,7 @@ class Wiki extends React.Component {
                 {this.props.gethot[2]?
                 this.props.gethot[2].products_info[3].map(val => (
                   <div
-                 key="val.product_id"
+                 key={val.product_id}
                   styleName = "discount-tag"
                   style = {{width:'366px', height:'361px'}}
                   >

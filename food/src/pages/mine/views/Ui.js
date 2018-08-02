@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Mine from './Mine';
-import { getAsistants } from '../actionCreator'
+// import { getAsistants } from '../actionCreator'
 
 const mapState = (state) => { 
     return {

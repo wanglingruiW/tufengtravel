@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { TabBar } from 'antd-mobile';
 
-import styles from '../style.scss'
-import CSSModule from 'react-css-modules'
+import '../style.scss'
 
 import wiki from '../../../assets/icons/wiki.svg'
 import wikiLight from '../../../assets/icons/wiki-light.svg'
@@ -17,7 +16,7 @@ import { Wiki } from '../../wiki/'
 import { Destination} from "../../Destination/index.js"
 import {Assistant} from '../../assistant/index.js'
 import {Mine} from '../../mine/index.js'
-
+import { Route } from 'react-router-dom'
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -139,4 +138,4 @@ class Home extends Component {
   }
 }
 
-export default CSSModule(Home, styles)
+export default Home

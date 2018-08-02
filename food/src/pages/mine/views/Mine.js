@@ -1,31 +1,17 @@
 import React, { Component, Fragment } from 'react'
 import '../style.scss'
-import { connect } from 'react-redux'
 import { List } from 'antd-mobile'
 
 import Icon from "../../../assets/icons/not-login.png"
-import Center from "../../../assets/icons/center.png"
 import Right from "../../../assets/icons/right.svg"
 
 const Item = List.Item;
-const Brief = Item.Brief;
-const mapState = (state) => { 
-    return {
-      destinations: state.destination.destinations,
-    }
-  }
-  
-  const mapDispatch = (dispatch) => {
-    return {
-      getData: (action) => {
-        dispatch(action)
-      },
-    }
-  }
+// const Brief = Item.Brief;
+
 
 class Mine extends Component {
-    constructor(props) {
-      super(props)
+    // constructor(props) {
+    //   super(props)
     
     // this.state = {
     //   goodList: [ 
@@ -34,7 +20,7 @@ class Mine extends Component {
     //     }
     //   ]
     // }
-  }
+  // }
 
 
 render() {
@@ -45,7 +31,7 @@ render() {
           <div styleName = "headtitle">
             <div styleName = "user-box">
             <div styleName="user-layout">
-              <img styleName="not-login-img" src={Icon}/>
+              <img alt ="" styleName="not-login-img" src={Icon}/>
             </div>
             <div styleName="login-or-reg">登录/注册</div>
             </div>
@@ -53,7 +39,7 @@ render() {
           <div styleName = "my-all-order">
             <span styleName="my-order-title">我的订单</span>
             <a styleName="order-all-title" >查看全部
-                <img  styleName = "icon"src = {Right}/>
+                <img alt = "" styleName = "icon"src = {Right}/>
             </a>
           </div>
           <div styleName = "fourlist">

@@ -49,6 +49,7 @@
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "resolve": "1.6.0",
@@ -114,14 +115,12 @@
     "/api": {
       "target": "https://app.toursforfun.com/",
       "changeOrigin": true,
-      "pathRewrite": {
-      }
+      "pathRewrite": {}
     },
     "/": {
       "target": "https://app.toursforfun.com/",
       "changeOrigin": true,
-      "pathRewrite": {
-      }
+      "pathRewrite": {}
     }
   }
 }

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { getDestinations } from '../actionCreator'
 import '../style.scss'
 import { connect } from 'react-redux'
-import { SearchBar, Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import { SearchBar, WhiteSpace, WingBlank } from 'antd-mobile';
 import { Tabs } from 'antd-mobile';
 import Datalist from"../../../components/DataList"
 const tabs = [
@@ -33,9 +33,9 @@ const mapState = (state) => {
 
 
 export class Destination extends Component {
-    constructor(props) {
-      super(props)
-    }
+    // constructor(props) {
+    //   super(props)
+    // }
 
 render() {
     // console.log(this.props)
@@ -51,7 +51,6 @@ render() {
           <WhiteSpace />
           <Tabs tabs={tabs}
             tabBarUnderlineStyle = "left"
-            style = {{width:'112px', height:'48px'}}
             tabBarPosition="left"
             tabDirection="vertical"
           >

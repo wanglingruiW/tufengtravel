@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Assistant from './Assistant';
-import { getAsistants } from '../actionCreator'
+
 
 const mapState = (state) => { 
     return {

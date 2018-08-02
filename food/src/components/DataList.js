@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 
 import './style.scss'
 
@@ -24,7 +24,7 @@ const DataList = ({destinations, from}) => {
             </div>
             <div styleName="dest-cycle">
             {destinations[0]? destinations[0].genre[0].data.map((val, index) => (
-            <div styleName = "dest-hot-items">
+            <div key = {val.id}styleName = "dest-hot-items">
                 <div styleName = "dest-hot-item" >
                   <div styleName="dest-hot-desc">
                     <div styleName = "dest-first-child">{val.description}</div>
@@ -49,13 +49,13 @@ const DataList = ({destinations, from}) => {
       
       )):""}
     </div>
-    <div styleName = "detaillist">
+    <div  styleName = "detaillist">
       <div styleName = "dest-recommend">
         <div styleName ="dest-recommend-title">
         途风精选
         </div>
         {destinations[0]? destinations[0].genre[5].data.map((value, index) => (
-        <div key = "value.id"styleName = "dest-recommend-group">
+        <div key = {value.id} styleName = "dest-recommend-group">
           <div styleName = "dest-recommend-item">
             <div styleName = "dest-recommend-img">
               <img

@@ -1,22 +1,10 @@
 import React, { Component, Fragment } from 'react'
 import '../style.scss'
-import { connect } from 'react-redux'
+
 
 import Rabbit from "../../../assets/icons/rabbit.png"
 
-const mapState = (state) => { 
-    return {
-      destinations: state.destination.destinations,
-    }
-  }
-  
-  const mapDispatch = (dispatch) => {
-    return {
-      getData: (action) => {
-        dispatch(action)
-      },
-    }
-  }
+
 
 class Assistant extends Component {
     constructor(props) {
@@ -39,7 +27,7 @@ render() {
           <div styleName = "scroll">
             <div styleName ="mytrip-other-content">
               <div styleName = "img-trip">
-                <img src={Rabbit}/>
+                <img  alt = "" src={Rabbit}/>
                 <div styleName="btn-login">
                   请登录后查看
                 </div>
@@ -49,9 +37,10 @@ render() {
               </div>
               <div>
               {this.state.goodList? this.state.goodList.map((value, index) => (
-               <div  key = "value.product_id" styleName = "tff-product-list">
+               <div  key = {value.product_id} styleName = "tff-product-list">
                   <div styleName = "product-item">
                     <img 
+                    alt = ""
                      src = {value.image}
                      style={{  verticalAlign: 'top' }}
                       onLoad={() => {
