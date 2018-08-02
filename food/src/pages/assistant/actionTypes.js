@@ -1,0 +1,1 @@
+export const Asistant = 'assistant/assistant'

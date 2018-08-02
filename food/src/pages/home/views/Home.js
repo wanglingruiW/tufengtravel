@@ -15,6 +15,8 @@ import settingLight from '../../../assets/icons/mine-light.svg'
 
 import { Wiki } from '../../wiki/'
 import { Destination} from "../../Destination/index.js"
+import {Assistant} from '../../assistant/index.js'
+import {Mine} from '../../mine/index.js'
 
 class Home extends Component {
   constructor(props) {
@@ -115,7 +117,7 @@ class Home extends Component {
               });
             }}
           >
-            {<div>ccc</div>}
+            <Assistant />
           </TabBar.Item>
           <TabBar.Item
             icon={{ uri: setting }}
@@ -129,7 +131,7 @@ class Home extends Component {
               });
             }}
           >
-            {<div>ddd</div>}
+            <Mine />
           </TabBar.Item>
         </TabBar>
       </div>

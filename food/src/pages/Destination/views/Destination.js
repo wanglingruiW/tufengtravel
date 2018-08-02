@@ -62,31 +62,58 @@ render() {
               />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of second tab
+                <Datalist
+                destinations = {this.props.destinations}
+                from = "destinations"
+                />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+                <Datalist
+                destinations = {this.props.destinations}
+                from = "destinations"
+                />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
             <div style={{ display: 'flex', width:'100%', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
-              Content of third tab
+            <Datalist
+               destinations = {this.props.destinations}
+               from = "destinations"
+            />
             </div>
           </Tabs>
           <WhiteSpace />

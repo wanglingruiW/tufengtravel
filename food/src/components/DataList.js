@@ -54,8 +54,34 @@ const DataList = ({destinations, from}) => {
         <div styleName ="dest-recommend-title">
         途风精选
         </div>
-        <div styleName = "dest-recommend-group">
+        {destinations[0]? destinations[0].genre[5].data.map((value, index) => (
+        <div key = "value.id"styleName = "dest-recommend-group">
+          <div styleName = "dest-recommend-item">
+            <div styleName = "dest-recommend-img">
+              <img
+              alt=""
+              src={value.image}
+              style={{ width: '100%', height:'100%', verticalAlign: 'top' }}
+              onLoad={() => {
+                // fire window resize event to change height
+                window.dispatchEvent(new Event('resize'));
+              }}
+              />
+            </div>
+            <p styleName = "dest-recommend-detail">{value.name}</p>
+            <div styleName = "dest-recommend-sp">
+              <span styleName="dest-recommend-sold">
+                已售{value.order_count}
+              </span>
+              <span styleName="dest-recommend-price">
+                <span styleName="dest-recommend-num "
+                style = {{color:"#FF5400"}}>${value.origin_price}</span>
+                起
+              </span>
+            </div>
+          </div>
         </div>
+        )):""}
       </div>
     </div>
     </div>
